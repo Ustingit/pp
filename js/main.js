@@ -3,7 +3,7 @@
 
 
 
-//chart:
+//chart: (https://www.chartjs.org/samples/latest/ , )
 function buildChart() {
   var ctx = document.getElementById('myChart').getContext('2d');
           var myChart = new Chart(ctx, {
@@ -87,6 +87,8 @@ myLineChart = new Chart(ctx).Line(lineChartData);
 
 function buildChart3() {
   //https://codepen.io/k3no/pen/pbYGVa
+  // http://mintrud.gov.by/ru/infa2
+  // https://www.nbrb.by/Statistics/rates/Graphic
 
   var canvas = document.getElementById("myChart");
 var ctx = canvas.getContext('2d');
@@ -96,9 +98,9 @@ Chart.defaults.global.defaultFontColor = 'black';
 Chart.defaults.global.defaultFontSize = 16;
 
 var data = {
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  labels: ["Jan-2019", "Feb-2019", "Mar-2019", "Apr-2019", "May-2019", "Jun-2019", "Jul-2019", "Aug-2019", "Sep-2019", "Oct-2019", "Nov-2019", "Dec-2019","Jan-2020", "Feb-2020", "Mar-2020"],
   datasets: [{
-      label: "Stock A",
+      label: "пенсия в USD",
       fill: false,
       lineTension: 0.1,
       backgroundColor: "rgba(225,0,0,0.4)",
@@ -117,13 +119,13 @@ var data = {
       pointRadius: 4,
       pointHitRadius: 10,
       // notice the gap in the data and the spanGaps: true
-      data: [65, 59, 80, 81, 56, 55, 40, ,60,55,30,78],
+      data: [177.0248, 176.2370, 178.5781, 179.4341, 192.0578, 193.5722, 197.9039, 211.5755, 206.6794, 209.6464, 210.6221, 204.0740, 204.1853, 198.0729, 183.3601],
       spanGaps: true,
     }, {
-      label: "Stock B",
+      label: "пенсия в BYN",
       fill: true,
       lineTension: 0.1,
-      backgroundColor: "rgba(167,105,0,0.4)",
+      backgroundColor: "rgb(109, 196, 124)",
       borderColor: "rgb(167, 105, 0)",
       borderCapStyle: 'butt',
       borderDash: [],
@@ -139,7 +141,7 @@ var data = {
       pointRadius: 4,
       pointHitRadius: 10,
       // notice the gap in the data and the spanGaps: false
-      data: [10, 20, 60, 95, 64, 78, 90,,70,40,70,89],
+      data: [381.17, 381.80, 381.80, 381.80, 405.05, 405.05, 405.05, 432.27,432.27,432.27,431.67, 431.29,432.73,432.73,432.73],
       spanGaps: false,
     }
 
@@ -155,7 +157,7 @@ var options = {
                 },
                 scaleLabel: {
                      display: true,
-                     labelString: 'Moola',
+                     labelString: 'Размер пенсии',
                      fontSize: 20 
                   }
             }]            
