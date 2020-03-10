@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- HEADER -->
+  
+    <div class="container-fluid">
+      <nav class="menu"> <!-- navbar got here: https://codepen.io/kdbkapsere/pen/KebooN -->
+        <span></span>
+        <ol>
+          <li class="menu-item"><a href="#0">Главная</a></li>
+          <li class="menu-item"><a href="#0">Статистика</a></li>
+          <li class="menu-item">
+            <a href="#0">Куда идём</a>
+            <ol class="sub-menu">
+              <li class="sub-menu-item"><a href="#0">Big Widgets</a></li>
+              <li class="sub-menu-item"><a href="#0">Bigger Widgets</a></li>
+              <li class="sub-menu-item"><a href="#0">Huge Widgets</a></li>
+            </ol>
+          </li>
+          <li class="menu-item">
+            <a href="#0">Статьи</a>
+            <ol class="sub-menu">
+              <li class="sub-menu-item"><a href="#0">Shishkabobs</a></li>
+              <li class="sub-menu-item"><a href="#0">BBQ kabobs</a></li>
+              <li class="sub-menu-item"><a href="#0">Summer kabobs</a></li>
+            </ol>
+          </li>
+          <li class="menu-item"><a href="#0">Предложить новость</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <p>Размер средней беларуской пенсии к курсу доллара</p>
+         <div class="graphics">
+
+          <canvas id="myChart" width="400" height="400"></canvas>
+          <script>
+          var ctx = document.getElementById('myChart').getContext('2d');
+          var myChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                  datasets: [{
+                      label: '# of Votes',
+                      data: [12, 19, 3, 5, 2, 3],
+                      backgroundColor: [
+                          'rgba(255, 99, 132, 0.2)',
+                          'rgba(54, 162, 235, 0.2)',
+                          'rgba(255, 206, 86, 0.2)',
+                          'rgba(75, 192, 192, 0.2)',
+                          'rgba(153, 102, 255, 0.2)',
+                          'rgba(255, 159, 64, 0.2)'
+                      ],
+                      borderColor: [
+                          'rgba(255, 99, 132, 1)',
+                          'rgba(54, 162, 235, 1)',
+                          'rgba(255, 206, 86, 1)',
+                          'rgba(75, 192, 192, 1)',
+                          'rgba(153, 102, 255, 1)',
+                          'rgba(255, 159, 64, 1)'
+                      ],
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      yAxes: [{
+                          ticks: {
+                              beginAtZero: true
+                          }
+                      }]
+                  }
+              }
+          });
+          </script>
+
+         </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  
+      <footer id="footer" class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
+<!-- Footer 
+<footer class="page-footer font-small blue">
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+
+</footer>-->
+<!-- Footer -->
+  
+  
+  
+  <!-- Add your site or application content here -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
