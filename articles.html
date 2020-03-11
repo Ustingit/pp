@@ -28,8 +28,8 @@
       <nav class="menu"> <!-- navbar got here: https://codepen.io/kdbkapsere/pen/KebooN -->
         <span></span>
         <ol>
-          <li class="menu-item"><a href="#">Главная</a></li>
-          <li class="menu-item"><a href="#">Статистика</a></li>
+          <li class="menu-item"><a href="#0">Главная</a></li>
+          <li class="menu-item"><a href="file:./index.html">Статистика</a></li>
           <li class="menu-item">
             <a href="#0">Куда идём</a>
             <ol class="sub-menu">
@@ -39,7 +39,7 @@
             </ol>
           </li>
           <li class="menu-item">
-            <a href="file:./articles.html">Статьи</a>
+            <a href="#0">Статьи</a>
             <ol class="sub-menu">
               <li class="sub-menu-item"><a href="#0">Shishkabobs</a></li>
               <li class="sub-menu-item"><a href="#0">BBQ kabobs</a></li>
@@ -54,14 +54,22 @@
     <div class="main-content">
       <div class="container">
         <div class="row">
-          <span>
-            <p style="align-content: center;">Размер средней беларуской пенсии к курсу доллара</p><br />
-          </span>
-          
-         <div class="graphics">
-          <canvas id="myChart" style="width: 1000px; height: 600px; align-content: center;"></canvas>
-         </div>
-
+            <h3>Министр труда и социальной защиты Республики Беларусь Ирина Костевич очертила своё видение поэтапного повышения пенсионного возраста в нашей стране.</h3>
+            <div>
+              <img src="./img/Articles/1/kostevich-main.jpg" alt="kostevich minister photo" >
+            </div>
+            <p>
+                "Для мужчины, 60 лет — это не возраст" - так  высказалась министр на заседании парламента, во время ответов на вопросы депутатов.
+           </p>
+            <p>
+                Для примера, в России в текущий момент мужчины могут выходить на пенсию в 60 лет, женщины же - по достижении 55 летнего возраста. Конечные значения пенсионного возраста для пенсионной реформы пока неясны. Продвигающие лица аппелируют как к опыту государств из списка СНГ, так и к зарубежному опыту. Одни их тех, кто уже провёл подобную реформу, - Беларусь.
+            </p>
+            <p>
+                В РБ пенсионную реформу провели в 2016-м году по решению Александра Лукашенко. Цифры выглядят следующим образом: с января 2017-го года пенсионный возраст будет повышаться каждое полугодие и к 2022 году достигнет 63 лет для мужчин, и 58 лет для женщин.
+            </p>
+            <p>
+                В 2018 и последующих годах проводился перерасчёт пенсий. Депутаты заявляют, что одна из приоритетных целей - это увеличение размера средней пенсии относительно средней зарплаты по стране до соотношения в 40%.
+            </p>
         </div>
         
       </div>
@@ -98,15 +106,6 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    buildChart3();
-
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
